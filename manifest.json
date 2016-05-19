@@ -1,0 +1,28 @@
+{
+  "name": "Git Filesystem Provider",
+  "manifest_version": 2,
+  "version" : "0.0.1",
+  "author": "Maksim Lin <maks@manichord.com>"
+  "permissions": [
+    "fileSystemProvider",
+    "storage"
+  ],
+  "icons": {
+    "16": "assets/16.png",
+    "128": "assets/128.png"
+  },
+  "app": {
+    "background": {
+      "scripts": [
+        "background.js"
+      ]
+    }
+  },
+  "file_system_provider_capabilities": {
+    "configurable": true,
+    "watchable": false,
+    "multiple_mounts": true,
+    "source": "network"
+  }
+}
+      
